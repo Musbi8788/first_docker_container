@@ -19,8 +19,10 @@ while True:
         feeling = input(f"\nHello {name}, How are you doing? ")
         if feeling == 'q':
             break
-    
-        print(f"You are {feeling}, Thanks...")
+        
     except EOFError:
         feeling = "fine"
+        print(f"You are {feeling}, Thanks...")
+    else:
+        print(f"You are {feeling}, Thanks...")
     
